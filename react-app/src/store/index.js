@@ -1,11 +1,20 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
+import profilesReducer from './profiles';
+import avatarsReducer from './avatars';
+import showsReducer from './shows';
+import watchlistsReducer from './watchlist';
+import watchlistsShowsReducer from './watchlistShows';
 import session from './session'
 
 const rootReducer = combineReducers({
   session,
+  profiles: profilesReducer,
+  avatars: avatarsReducer,
+  shows: showsReducer,
+  watchlists: watchlistsReducer,
+  watchlistShows: watchlistsShowsReducer
 });
-
 
 let enhancer;
 
