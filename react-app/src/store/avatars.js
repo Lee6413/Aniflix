@@ -25,7 +25,6 @@ export const getAvatarsThunk = () => async (dispatch) => {
 
 /* -----------------------Initial State & Reducer------------------------- */
 
-
 const initialState = {}
 export default function avatarsReducer(state = initialState, action) {
   let newState = { ...state }
