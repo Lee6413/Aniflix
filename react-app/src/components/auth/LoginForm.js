@@ -65,7 +65,7 @@ const LoginForm = () => {
         <button type='submit' id={styles.loginDiv}>LOG IN</button>
       </form>
       <span id={styles.signUpMssg}>
-        New to Ultra+? <NavLink id={styles.signUpText} to='/sign-up'>Sign Up</NavLink>
+        New to Aniflix? <NavLink id={styles.signUpText} to='/sign-up'>Sign Up</NavLink>
       </span>
       <span id={styles.signUpMssg}>
         Or
