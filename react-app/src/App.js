@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import LoginForm from './components/auth/LoginForm';
-import SignUpForm from './components/auth/SignUpForm';
+import LoginPage from './components/LoginPage';
+import SignUpPage from './components/SignUpPage'
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Splash from './components/Splash';
 import UsersList from './components/UsersList';
@@ -32,10 +33,10 @@ function App() {
           <Splash />
         </Route>
         <Route path='/login' exact={true}>
-          <LoginForm />
+          <LoginPage />
         </Route>
         <Route path='/sign-up' exact={true}>
-          <SignUpForm />
+          <SignUpPage />
         </Route>
         <ProtectedRoute path='/users' exact={true} >
           <UsersList/>
@@ -43,10 +44,8 @@ function App() {
         <ProtectedRoute path='/users/:userId' exact={true} >
           <User />
         </ProtectedRoute>
-        {/* <ProtectedRoute path='/' exact={true} >
-          <h1>My Home Page</h1>
-        </ProtectedRoute> */}
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }
