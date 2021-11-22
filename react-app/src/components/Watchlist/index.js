@@ -58,23 +58,9 @@ export default function Watchlist() {
     dispatch(passData(data))
   }
 
-  // Add onclick function here to dispatch the setProfile thunk
-  // const setProfile = (id) => {
-  //     // dispatch(setProfileThunk(id))
-  //     localStorage.setItem('profile', id)
-  // }
-
-  // const profiles = useSelector(store => store?.profiles)
-  // const profileArr = Object.values(profiles)
-  // console.log("\n\n\n\n\n\n profilessss", profileArr, "\n\n\n\n\n\n\n\n\n\n");
-
-
   return (
     <>
       <div id={styles.page}>
-        {/* {!showMenu ? (
-                    <span id={styles.editProfile} onClick={openMenu}>EDIT PROFILES</span>
-                ) : <span id={styles.editProfile} onClick={closeMenu}>CANCEL</span>} */}
         <div id={styles.midContainer}>
           <div id={styles.whosDiv}>
             <span id={styles.whosText}>Watchlists</span>

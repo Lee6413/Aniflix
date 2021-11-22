@@ -52,7 +52,7 @@ export default function Splash() {
           </div>
         </div>
       </div>
-      <div id={styles.secondHalf}>
+      {/* <div id={styles.secondHalf}>
         <div id={styles.headerText}>
           Aniflix has your favorite stories
         </div>
@@ -71,7 +71,7 @@ export default function Splash() {
           <div id={styles.showImage} style={{ backgroundImage: `url(https://img4.hulu.com/user/v3/artwork/77477b5f-905c-492f-a6a2-087fd4f85a15?base_image_bucket_name=image_manager&base_image=44651417-ab88-4504-a37b-b55e953271d4&size=1200x630&format=jpeg)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
           <div id={styles.showImage} style={{ backgroundImage: `url(https://img4.hulu.com/user/v3/artwork/bd0a102d-3697-4274-900e-be9e4a3dc6d4?base_image_bucket_name=image_manager&base_image=7f216762-5594-4778-9fbb-129a47cdd209&operations=%5B%7B%22resize%22:%22600x600%7Cmax%22%7D,%7B%22format%22:%22webp%22%7D%5D)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
