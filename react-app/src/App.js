@@ -9,6 +9,8 @@ import WhosWatching from './components/WhosWatching';
 import SelectAvatar from './components/SelectAvatar';
 import CreateProfile from './components/CreateProfile';
 import EditProfile from './components/EditProfile';
+import MainSplash from './components/MainSplash';
+import ShowPage from './components/ShowPage';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Splash from './components/Splash';
 import UsersList from './components/UsersList';
@@ -53,6 +55,14 @@ function App() {
         </ProtectedRoute>
         <ProtectedRoute path='/edit-profile' exact={true} >
           <EditProfile />
+        </ProtectedRoute>
+        <ProtectedRoute path='/main' exact={true} >
+          <NavBar />
+          <MainSplash />
+        </ProtectedRoute>
+        <ProtectedRoute path='/shows/:id' exact={true} >
+          <NavBar />
+          <ShowPage />
         </ProtectedRoute>
         <ProtectedRoute path='/users' exact={true} >
           <UsersList/>
