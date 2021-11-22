@@ -11,6 +11,8 @@ import CreateProfile from './components/CreateProfile';
 import EditProfile from './components/EditProfile';
 import MainSplash from './components/MainSplash';
 import ShowPage from './components/ShowPage';
+import Watchlist from './components/Watchlist';
+import WatchlistPage from './components/WatchlistPage';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Splash from './components/Splash';
 import UsersList from './components/UsersList';
@@ -63,6 +65,14 @@ function App() {
         <ProtectedRoute path='/shows/:id' exact={true} >
           <NavBar />
           <ShowPage />
+        </ProtectedRoute>
+        <ProtectedRoute path='/watchlists' exact={true} >
+          <NavBar />
+          <Watchlist />
+        </ProtectedRoute>
+        <ProtectedRoute path='/watchlists/:id' exact={true} >
+          <NavBar />
+          <WatchlistPage />
         </ProtectedRoute>
         <ProtectedRoute path='/users' exact={true} >
           <UsersList/>
