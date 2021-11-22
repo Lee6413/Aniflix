@@ -4,11 +4,11 @@ from app.models import db, Avatar
 # Adds a demo user, you can add other users here if you want
 def seed_avatars():
   Light = Avatar(
-    image_url='https://i.ibb.co/7jNHhtY/img-chara-01.png')
+    image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1XjeJZhnXH8kj9vA6qoGcLKJccYdWVUy4Q&usqp=CAU')
   Misa = Avatar(
-    image_url='https://www.seekpng.com/png/full/384-3846696_goku-face-dragon-ball-z-the-complete-collection.png')
+    image_url='https://cdn.myanimelist.net/images/characters/5/30971.jpg')
   L = Avatar(
-    image_url='https://i.ibb.co/B60zb0g/Naruto-Shippuden-Uzumaki-Naruto-Jacket.png')
+    image_url='https://data.whicdn.com/images/103060175/original.jpg')
 
   db.session.add(Light)
   db.session.add(Misa)
