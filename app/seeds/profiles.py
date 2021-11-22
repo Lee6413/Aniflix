@@ -3,11 +3,11 @@ from app.models import db, Profile
 # Adds a demo user, you can add other users here if you want
 def seed_profiles():
   demo = Profile(
-    name="demo", user_id=1, avatar_id=1)
+    name="Light", user_id=1, avatar_id=1)
   test1 = Profile(
-    name="test1", user_id=1, avatar_id=2)
+    name="Misa", user_id=1, avatar_id=2)
   test2 = Profile(
-    name="test2", user_id=2, avatar_id=3)
+    name="L", user_id=2, avatar_id=3)
 
   db.session.add(demo)
   db.session.add(test1)
