@@ -5,9 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(26, 29, 41);
-    border-bottom: 1px solid rgb(75, 78, 90);
-
+    background-color: rgb(19, 19, 19);
 }
 
 #navPic{
@@ -17,28 +15,56 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 30px;
+}
 
+#manageButton{
+    margin-bottom: 500px;
 }
 
 #editProfile{
     display: flex;
     width: 160px;
     height: 40px;
-    background-color: rgb(75, 78, 90);
-    border-radius: 5px;
+    /* background-color: rgb(75, 78, 90); */
+    border: 1px solid grey;
+    /* border-radius: 10px; */
     margin-right: 30px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: gray;
     padding: 5px;
-    font-weight: bold;
+    letter-spacing: 2px;
+    /* font-weight: bold; */
     cursor: pointer;
-    transition: background-color 200ms, color 200ms ;
 }
 
 #editProfile:hover{
-    background-color: rgba(99, 99, 99);
+    border: 1.5px solid white;
+    color: white;
+
+}
+
+#editProfileEnd{
+    display: flex;
+    width: 160px;
+    height: 40px;
+    background-color: whitesmoke;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#editProfileEnd:hover{
+    background-color: red;
+    color: white;
+
 }
 
 
@@ -48,14 +74,14 @@
     justify-content: center;
     /* align-items: center; */
     /* margin-top: 80px; */
-    background-color: rgb(26, 29, 41);
+    background-color: rgb(19, 19, 19);
 }
 
 #midContainer{
     display: flex;
     width: 1343px;
     height: 800px;
-    background-color: rgb(26, 29, 41);
+    background-color: rgb(19, 19, 19);
     flex-direction: column;
     align-items: center;
     color: white;
@@ -93,14 +119,14 @@
 #profilePic{
     width: 135px;
     height: 140px;
-    border-radius: 50%;
+    border-radius: 10px;
     transition: box-shadow 300ms, transform 300ms;
 }
 
 #profilePicEdit{
     width: 135px;
     height: 140px;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 #profilePic:hover{

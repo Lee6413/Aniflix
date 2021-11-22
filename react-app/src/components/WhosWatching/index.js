@@ -59,9 +59,6 @@ export default function WhosWatching() {
     <>
       <div id={styles.navContainer}>
         <div id={styles.navPic} />
-        {!showMenu ? (
-          <span id={styles.editProfile} onClick={openMenu}>EDIT PROFILES</span>
-        ) : <span id={styles.editProfile} onClick={closeMenu}>CANCEL</span>}
       </div>
       <div id={styles.page}>
         <div id={styles.midContainer}>
@@ -69,7 +66,6 @@ export default function WhosWatching() {
             <span id={styles.whosText}>Who's Watching?</span>
           </div>
           <div id={styles.profileContainer}>
-            {/* here, do mappings for profiles based on user's id */}
             {profileArr.map((profile) => {
               return (
                 (sessionUser.id === profile.user_id) && (
@@ -110,6 +106,11 @@ export default function WhosWatching() {
                 Add Profile
               </div>
             </div>
+          </div>
+          <div id={styles.manageButton}>
+            {!showMenu ? (
+              <span id={styles.editProfile} onClick={openMenu}>Manage Profiles</span>
+            ) : <span id={styles.editProfileEnd} onClick={closeMenu}>Done</span>}
           </div>
         </div>
       </div>

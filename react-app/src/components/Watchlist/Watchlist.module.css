@@ -93,7 +93,7 @@
 #profilePic{
     width: 135px;
     height: 140px;
-    border-radius: 50%;
+    border-radius: 10px;
     transition: box-shadow 300ms, transform 300ms;
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@
 #profilePicEdit{
     width: 135px;
     height: 140px;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 #profilePic:hover{

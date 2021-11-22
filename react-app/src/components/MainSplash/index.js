@@ -21,11 +21,6 @@ export default function MainSplash() {
   const showsObj = useSelector(state => state?.shows)
   let showsArr = Object.values(showsObj)
 
-  // const profileId = localStorage.getItem('profile')
-  // console.log(profileId);
-
-  // const images = [{image: 'https://i.ibb.co/PTww0sY/Webp-net-resizeimage.jpg', id:4, title:'https://i.ibb.co/7r47MJD/5ede4a3fb760540004f2c5e9.png'   }, 'https://i.ibb.co/X2tfPJ4/dragon-ball-desktop-tournament-of-power-wallpapers-wallpaper-cave-jpg.jpg', 'https://i.ibb.co/CHP2cns/2.jpg']
-
   const images = [showsArr[3], showsArr[1], showsArr[8], showsArr[6]]
 
   const upOne = () => {
@@ -56,7 +51,7 @@ export default function MainSplash() {
 
   return (
     <div id={styles.page}>
-      <div id={styles.carousel} style={{ backgroundImage: `url(${images[num]?.background_art_url})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+      {/* <div id={styles.carousel} style={{ backgroundImage: `url(${images[num]?.background_art_url})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
         <div id={styles.leftarrow} onClick={downOne}><AiOutlineArrowLeft /></div>
         <NavLink id={styles.middle} to={`/shows/${images[num]?.id}`}>
           <div>
@@ -64,9 +59,8 @@ export default function MainSplash() {
           </div>
         </NavLink>
         <div id={styles.rightarrow} onClick={upOne}><AiOutlineArrowRight /></div>
-      </div>
-      {/* <div id={styles.topStudiosText}>TOP STUDIOS</div> */}
-      <div id={styles.studiosContainer}>
+      </div> */}
+      {/* <div id={styles.studiosContainer}>
         {!filtered ? (
           <>
             <div onClick={() => filterThis('MAPPA')} className={styles.studioBox} id={styles.mappa}>
@@ -90,7 +84,7 @@ export default function MainSplash() {
             <span onClick={() => setFiltered(false)} id={styles.studioText}> <AiOutlineArrowLeft /> Back to all shows</span>
           </>
         )}
-      </div>
+      </div> */}
       <div id={styles.showContainer}>
         {/* map out the shows object */}
         {!filtered ? (
