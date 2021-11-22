@@ -33,7 +33,7 @@ const LoginForm = () => {
 
   return (
     <div id={styles.formHolder}>
-      <span id={styles.loginText}>Log in with your email</span>
+      <span id={styles.loginText}>Sign In</span>
       <form onSubmit={onLogin} id={styles.form}>
         <div id={styles.errors}>
           {errors.map((error, ind) => (
@@ -62,10 +62,10 @@ const LoginForm = () => {
             onChange={updatePassword}
           />
         </div>
-        <button type='submit' id={styles.loginDiv}>LOG IN</button>
+        <button type='submit' id={styles.loginDiv}>Sign In</button>
       </form>
       <span id={styles.signUpMssg}>
-        New to Aniflix? <NavLink id={styles.signUpText} to='/sign-up'>Sign Up</NavLink>
+        New to Aniflix? <NavLink id={styles.signUpText} to='/sign-up'>Sign up now</NavLink>
       </span>
       <span id={styles.signUpMssg}>
         Or
