@@ -44,7 +44,7 @@ const SignUpForm = () => {
 
   return (
     <div id={styles.formHolder}>
-      <span id={styles.loginText}>Sign up with your email</span>
+      <span id={styles.loginText}>Sign Up</span>
       <form onSubmit={onSignUp} id={styles.form}>
         <div id={styles.errors}>
           {errors.map((error, ind) => (
