@@ -163,6 +163,16 @@ def seed_shows():
     year='2011',
     video_url='https://www.youtube.com/watch?v=Txl2imn11bM'
   )
+  assassination = Show(
+    name='Assassination Classroom',
+    thumbnail_url='https://img2.hulu.com/user/v3/artwork/aeb20011-e054-483b-8422-39ad643fc224?base_image_bucket_name=image_manager&base_image=2f4c341a-37e1-4ce1-86ff-4d4f16922a24&operations=%5B%7B%22resize%22:%22600x600%7Cmax%22%7D,%7B%22format%22:%22webp%22%7D%5D',
+    title_pic_url='https://i.ibb.co/jVFVKVG/Assassination-Classroom-logo.png',
+    background_art_url=f'https://www.anime-internet.com/content/images/wordpress/2021/02/77-Assassination-Classroom-Aesthetic-Background.jpg',
+    details_body="Forget about homework. The students of Class 3E have a more important assignment: kill the teacher! Their tentacle-d sensei moves at Mach 20, and he’s out to conquer the classroom after destroying most of the moon!",
+    studio='Lerche',
+    year='2015',
+    video_url='https://www.youtube.com/watch?v=MugZiPfiDgc&list=PL3VA6KDlP1eTfS2U0y9tMB-pXhzX7FUCA'
+  )
 
   db.session.add(attack_on_titan)
   db.session.add(dragonball)
@@ -180,6 +190,7 @@ def seed_shows():
   db.session.add(opm)
   db.session.add(vinland)
   db.session.add(hunter)
+  db.session.add(assassination)
 
   db.session.commit()
 

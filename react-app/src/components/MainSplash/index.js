@@ -51,7 +51,7 @@ export default function MainSplash() {
 
   return (
     <div id={styles.page}>
-      {/* <div id={styles.carousel} style={{ backgroundImage: `url(${images[num]?.background_art_url})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+      <div id={styles.carousel} style={{ backgroundImage: `url(${images[num]?.background_art_url})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
         <div id={styles.leftarrow} onClick={downOne}><AiOutlineArrowLeft /></div>
         <NavLink id={styles.middle} to={`/shows/${images[num]?.id}`}>
           <div>
@@ -59,18 +59,18 @@ export default function MainSplash() {
           </div>
         </NavLink>
         <div id={styles.rightarrow} onClick={upOne}><AiOutlineArrowRight /></div>
-      </div> */}
-      {/* <div id={styles.studiosContainer}>
+      </div>
+      <div id={styles.studiosContainer}>
         {!filtered ? (
           <>
             <div onClick={() => filterThis('MAPPA')} className={styles.studioBox} id={styles.mappa}>
-              <div id={styles.logo} style={{ backgroundImage: `url(https://i.ibb.co/WvQ3N9D/508px-MAPPA-Logo-svg.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
+              <div id={styles.logo} style={{ backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/MAPPA_Logo.svg/1280px-MAPPA_Logo.svg.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
             </div>
             <div onClick={() => filterThis('bones')} className={styles.studioBox} id={styles.bones}>
-              <div id={styles.logo} style={{ backgroundImage: `url(https://i.ibb.co/mtZZB0Q/829-8290680-48kib-2000x410-bones-bones-studio-anime-logo.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
+              <div id={styles.logo} style={{ backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Bones_logo.svg/1024px-Bones_logo.svg.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
             </div>
             <div onClick={() => filterThis('Madhouse')} className={styles.studioBox} id={styles.madhouse}>
-              <div id={styles.logo} style={{ backgroundImage: `url(https://i.ibb.co/MCCXrv7/1200px-Madhouse-studio-logo-svg.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
+              <div id={styles.logo} style={{ backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Kyoto_Animation_logo.svg/2560px-Kyoto_Animation_logo.svg.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
             </div>
             <div onClick={() => filterThis('Wit Studio')} className={styles.studioBox} id={styles.wit}>
               <div id={styles.logo} style={{ backgroundImage: `url(https://i.ibb.co/rvgwfTs/220px-Wit-studio-svg-1.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
@@ -84,7 +84,7 @@ export default function MainSplash() {
             <span onClick={() => setFiltered(false)} id={styles.studioText}> <AiOutlineArrowLeft /> Back to all shows</span>
           </>
         )}
-      </div> */}
+      </div>
       <div id={styles.showContainer}>
         {/* map out the shows object */}
         {!filtered ? (
