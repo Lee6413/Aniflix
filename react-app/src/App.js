@@ -15,6 +15,7 @@ import Watchlist from './components/Watchlist';
 import WatchlistPage from './components/WatchlistPage';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Splash from './components/Splash';
+import ShowVideo from './components/ShowVideo';
 import UsersList from './components/UsersList';
 import User from './components/User';
 import { authenticate } from './store/session';
@@ -73,6 +74,10 @@ function App() {
         <ProtectedRoute path='/watchlists/:id' exact={true} >
           <NavBar />
           <WatchlistPage />
+        </ProtectedRoute>
+        <ProtectedRoute path='/shows/:id/video' exact={true} >
+          <NavBar />
+          <ShowVideo />
         </ProtectedRoute>
         <ProtectedRoute path='/users' exact={true} >
           <UsersList/>
