@@ -1,134 +1,60 @@
-# Flask React Project
+# Aniflix
 
-This is the starter for the Flask React project.
+## Aniflix Overview
 
-## Getting started
+Aniflix is a full stack Netflix clone that specifically focuses on anime content. Signed in users can browse several shows with an abundance of 20+ shows avalible for viewing 
+and enjoy video playing feature. Signed in users can also make their own watchlist to organize shows into custom lists and create user profiles for everyone to have their own cutomized watchlist and favorite shows.
 
-1. Clone this repository (only this branch)
+## Features
 
-   ```bash
-   git clone https://github.com/appacademy-starters/python-project-starter.git
-   ```
+### Profiles
 
-2. Install dependencies
+* Logged in users are able to create, update, and delete profiles.
 
-      ```bash
-      pipenv install --dev -r dev-requirements.txt && pipenv install -r requirements.txt
-      ```
+### Watchlist
 
-3. Create a **.env** file based on the example with proper settings for your
-   development environment
-4. Setup your PostgreSQL user, password and database and make sure it matches your **.env** file
+* Logged in users are able to create, update, and delete watchlists and add shows to them.
 
-5. Get into your pipenv, migrate your database, seed your database, and run your flask app
+### Watch Shows
 
-   ```bash
-   pipenv shell
-   ```
+* Logged in users can navigate to a shows page and watch a clip or a full episode by pressing the play button.
 
-   ```bash
-   flask db upgrade
-   ```
+### Tags
 
-   ```bash
-   flask seed all
-   ```
+* Logged in users can sort shows that are divided into 5 categories based on the studio to made the show.
 
-   ```bash
-   flask run
-   ```
+## Application Architecture
 
-6. To run the React App in development, checkout the [README](./react-app/README.md) inside the `react-app` directory.
+Aniflix is built on a React frontend with a Flask backend, using PostgreSQL as a database.
 
-***
-*IMPORTANT!*
-   If you add any python dependencies to your pipfiles, you'll need to regenerate your requirements.txt before deployment.
-   You can do this by running:
+## Frontend Overview
 
-   ```bash
-   pipenv lock -r > requirements.txt
-   ```
+### React
 
-*ALSO IMPORTANT!*
-   psycopg2-binary MUST remain a dev dependency because you can't install it on apline-linux.
-   There is a layer in the Dockerfile that will install psycopg2 (not binary) for us.
-***
+Aniflix is a React application. All display logic is handled by the React libraries.
 
-## Deploy to Heroku
+### Redux
 
-1. Before you deploy, don't forget to run the following command in order to
-ensure that your production environment has all of your up-to-date
-dependencies. You only have to run this command when you have installed new
-Python packages since your last deployment, but if you aren't sure, it won't
-hurt to run it again.
+Aniflix makes extensive use of Redux. All state management is handled with Redux, with thunks making API calls to the backend server for data.
 
-   ```bash
-   pipenv lock -r > requirements.txt
-   ```
+### React Player
 
-2. Create a new project on Heroku
-3. Under Resources click "Find more add-ons" and add the add on called "Heroku Postgres"
-4. Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line)
-5. Run
+The React Player library is used to allow users to view a clip of the show of their choosing.
 
-   ```bash
-   heroku login
-   ```
+## Backend Overview
 
-6. Login to the heroku container registry
+### Flask
 
-   ```bash
-   heroku container:login
-   ```
+Although Express could have done the job as well, Flask was my choice for this project. I didn't have as much experience with it yet as I did with Express and so I wanted to improve upon it. Flask was also easy to work with in that I was able to explicilty see what data would be sent back and what needed to be sent in from the front to work.
 
-7. Update the `REACT_APP_BASE_URL` variable in the Dockerfile.
-   This should be the full URL of your Heroku app: i.e. "https://flask-react-aa.herokuapp.com"
-8. Push your docker container to heroku from the root directory of your project.
-   (If you are using an M1 mac, follow [these steps below](#for-m1-mac-users) instead, then continue on to step 9.)
-   This will build the Dockerfile and push the image to your heroku container registry.
+## PostgreSQL
 
-   ```bash
-   heroku container:push web -a {NAME_OF_HEROKU_APP}
-   ```
+PostgreSQL was the database of choice because it is simple to work with, and is easily manipulable using SQLAlchemy.
 
-9. Release your docker container to heroku
+## SQLAlchemy
 
-      ```bash
-      heroku container:release web -a {NAME_OF_HEROKU_APP}
-      ```
+SQLAlchemy was the ORM of choice for Aniflix because of how nicely it integrates with PostgreSQL. All table management and data seeding was handled neatly and simply by way of SQLAlchemy.
 
-10. set up your database
+## Future Plans
 
-      ```bash
-      heroku run -a {NAME_OF_HEROKU_APP} flask db upgrade
-      heroku run -a {NAME_OF_HEROKU_APP} flask seed all
-      ```
-
-11. Under Settings find "Config Vars" and add any additional/secret .env
-variables.
-
-12. profit
-
-### For M1 Mac users
-
-(Replaces **Step 8**)
-
-1. Build image with linux platform for heroku servers. Replace
-{NAME_OF_HEROKU_APP} with your own tag:
-
-   ```bash=
-   docker buildx build --platform linux/amd64 -t {NAME_OF_HEROKU_APP} .
-   ```
-
-2. Tag your app with the url for your apps registry. Make sure to use the name
-of your Heroku app in the url and tag name:
-
-   ```bash=2
-   docker tag {NAME_OF_HEROKU_APP} registry.heroku.com/{NAME_OF_HEROKU_APP}/web
-   ```
-
-3. Use docker to push the image to the Heroku container registry:
-
-   ```bash=3
-   docker push registry.heroku.com/{NAME_OF_HEROKU_APP}/web
-   ```
+So far I am pleased with the progress made on Aniflix's functionality. In the future I would like to implement a search bar to allow users to search for a show on the site.
