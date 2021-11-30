@@ -53,26 +53,14 @@
 }
 
 #picInMid{
-  background: transparent;
-  position: absolute;
-  top: 10px;
-  right: 200px;
-  bottom: 670px;
-  left: -1120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    margin-top: 10px;
+    margin-right: 1200px;
+    width: 150px;
+    height: 60px;
     background-image: url(https://fontmeme.com/permalink/211120/6d3ab2cd09fbfbd51393c6eafe237814.png);
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 2;
 }
 
 #signUpInMid{

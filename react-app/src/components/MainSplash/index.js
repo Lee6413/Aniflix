@@ -70,7 +70,7 @@ export default function MainSplash() {
               <div id={styles.logo} style={{ backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Bones_logo.svg/1024px-Bones_logo.svg.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
             </div>
             <div onClick={() => filterThis('Madhouse')} className={styles.studioBox} id={styles.madhouse}>
-              <div id={styles.logo} style={{ backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Kyoto_Animation_logo.svg/2560px-Kyoto_Animation_logo.svg.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
+              <div id={styles.logo} style={{ backgroundImage: `url(https://i.ibb.co/MCCXrv7/1200px-Madhouse-studio-logo-svg.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
             </div>
             <div onClick={() => filterThis('Wit Studio')} className={styles.studioBox} id={styles.wit}>
               <div id={styles.logo} style={{ backgroundImage: `url(https://i.ibb.co/rvgwfTs/220px-Wit-studio-svg-1.png)`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
@@ -108,7 +108,6 @@ export default function MainSplash() {
             })}
           </>
         )
-
         }
       </div>
     </div>
